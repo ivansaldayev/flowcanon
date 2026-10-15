@@ -1,0 +1,20 @@
+{
+  "name": "flowcanon",
+  "displayName": "Flowcanon",
+  "version": "0.1.0",
+  "description": "Agent workflow canon for Claude Code: proven forms of work (flows) with an independent gate in each, manuals for the lead, teammate and executor, and a roster of agent roles.",
+  "author": {
+    "name": "Ivan Saldayev",
+    "email": "ivansaldayev@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "workflow",
+    "multi-agent",
+    "team",
+    "orchestration",
+    "subagents",
+    "review"
+  ]
+}

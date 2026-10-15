@@ -1,0 +1,29 @@
+{
+  "description": "Flowcanon plugin - session id in context for the wal skill; subagent spawn only from the project root, named teammates only from the main session",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/inject-session-id.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/require-root-cwd.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "<a short run name in kebab-case, valid as a file name: goes into results and logs>",
+  "title": "<one line: what this run is>",
+  "context": "<one or two sentences for the header of every prompt: the genre of the places, how home entries are read, where the owner decisions live, the run's special rules; without this field the header is shorter>",
+  "repos": ["<submodule name>", "<submodule name>"],
+  "prefix": "ai/current/<run>-",
+  "home": "<the default home entry, when one home serves all places; otherwise remove the field>",
+  "sources": [
+    { "name": "<HOW TO NAME THE SOURCE IN THE PROMPT>", "path": "<file path from the root>", "hint": "<how to read: search by grep, what is outdated, what outweighs>" }
+  ],
+  "canon": "<path from the root to the owner decisions file; no such file — remove the field>",
+  "designDocs": "<path from the root to the project's screen docs; no such docs — remove the field>",
+  "checksDir": "<path from the root to your own deep-review/checks directory; usually remove the field — then the checks of the deep-review skill lying next to the team skill are used>",
+  "notFindings": [
+    "<a «what is not a finding» line of this run: owner decisions, home entries already opened>"
+  ],
+  "lenses": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "F1"],
+  "maxRounds": 4
+}
